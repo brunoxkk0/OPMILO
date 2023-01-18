@@ -2,11 +2,11 @@
 *
 
 #Whitelist these files
-!overrides/
+!overrides/**
 !.gitignore
 !manifest.json
 !modlist.html
 !README.md
 !InstanceSync.jar
-!install/
+!install/**
 !minecraftinstance.json
