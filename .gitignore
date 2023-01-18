@@ -1,0 +1,12 @@
+#Ignore everything
+*
+
+#Whitelist these files
+!overrides/
+!.gitignore
+!manifest.json
+!modlist.html
+!README.md
+!InstanceSync.jar
+!install/
+!minecraftinstance.json
