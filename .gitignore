@@ -1,8 +1,13 @@
 #Ignore everything
+.idea
+.vscode
 /*
 ~*
+/kubejs/probe
+/kubejs/exported
 
 #Whitelist these files
+!/kubejs
 !/config
 !/overrides
 !.gitignore
