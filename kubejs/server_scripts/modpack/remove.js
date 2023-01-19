@@ -22,4 +22,27 @@ ServerEvents.recipes((event) => {
   event.remove({ output: "immersiveengineering:cokebrick" });
   event.remove({ output: "immersiveengineering:alloybrick" });
   event.remove({ output: "immersiveengineering:blastbrick" });
+  event.remove({ output: "immersiveengineering:hammer" });
+  event.remove({ output: "immersiveengineering:wirecutter" });
+
+  // Remove all plates
+  event.remove({ input: "ad_astra:hammer" });
+  event.remove({ input: "#alltheores:ore_hammers", output: "#forge:plates" });
+
+  // Remove easy steel recipe
+  event.remove({
+    input: "minecraft:iron_ingot",
+    output: "#forge:ingots/steel",
+  });
+
+  event.remove({
+    input: "#alltheores:ore_hammers",
+    output: "#forge:dusts/steel",
+  });
+
+  // Remove all gears
+  event.remove({ output: "#forge:gears", type: "minecraft:crafting_shaped" });
+
+  //Create Deco
+  event.remove({ output: "createdeco:dean_brick" });
 });

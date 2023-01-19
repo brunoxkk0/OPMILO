@@ -116,7 +116,7 @@ MinecraftBlastRecipe.create("#forge:netherrack", "minecraft:nether_brick");
 
     Minecraft smoking recipe
 */
-MinecraftBlastRecipe.create("myrtrees:latex", "industrialforegoing:plastic");
+MinecraftSmokingRecipe.create("myrtrees:latex", "industrialforegoing:plastic");
 
 /*
 
@@ -132,6 +132,44 @@ MinecraftShapedRecipe.create("minecraft:furnace", ["CCC", "C C", "SSS"], {
   C: "#forge:cobblestone",
   S: "minecraft:smooth_stone",
 });
+
+MinecraftShapedRecipe.create(
+  "4x createdeco:dean_brick",
+  ["BBB", "BDB", "BBB"],
+  {
+    B: "minecraft:brick",
+    D: "minecraft:blaze_powder",
+  }
+);
+
+MinecraftShapedRecipe.create(
+  "3x immersiveengineering:blastbrick",
+  ["BWB", "WMW", "BWB"],
+  {
+    B: "minecraft:nether_brick",
+    W: "createdeco:worn_brick",
+    M: "minecraft:magma_cream",
+  }
+);
+
+MinecraftShapedRecipe.create(
+  "immersiveengineering:hammer",
+  [" IF", " SI", "S  "],
+  {
+    I: "minecraft:iron_ingot",
+    F: "immersiveengineering:hemp_fiber",
+    S: "#forge:rods/wooden",
+  }
+);
+
+MinecraftShapedRecipe.create(
+  "immersiveengineering:wirecutter",
+  ["TP ", " T ", "   "],
+  {
+    T: "immersiveengineering:stick_treated",
+    P: "#forge:plates/iron",
+  }
+);
 
 /*
 
