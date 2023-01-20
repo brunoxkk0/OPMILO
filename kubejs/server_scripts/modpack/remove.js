@@ -25,6 +25,9 @@ ServerEvents.recipes((event) => {
   event.remove({ output: "immersiveengineering:hammer" });
   event.remove({ output: "immersiveengineering:wirecutter" });
 
+  //Axe part
+  event.remove({ output: "silentgear:axe_template" });
+
   // Remove all plates
   event.remove({ input: "ad_astra:hammer" });
   event.remove({ input: "#alltheores:ore_hammers", output: "#forge:plates" });

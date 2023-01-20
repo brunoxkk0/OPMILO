@@ -171,6 +171,11 @@ MinecraftShapedRecipe.create(
   }
 );
 
+MinecraftShapedRecipe.create("silentgear:axe_template", ["TT ", "TS ", "   "], {
+  T: "silentgear:template_board",
+  S: "#forge:rods/wooden",
+});
+
 /*
 
 
