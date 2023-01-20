@@ -5,6 +5,10 @@
 ~*
 /kubejs/probe
 /kubejs/exported
+/config/**/*client.*
+/config/MouseTweaks.cfg
+config/jei/*
+
 
 #Whitelist these files
 !/kubejs
