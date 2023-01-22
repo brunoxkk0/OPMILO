@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "OPMILO",
-  "version": "1.1-Beta",
+  "version": "1.1",
   "author": "",
   "files": [
     {
@@ -620,6 +620,11 @@
       "required": true
     },
     {
+      "projectID": 475117,
+      "fileID": 4028357,
+      "required": true
+    },
+    {
       "projectID": 404468,
       "fileID": 4229140,
       "required": true
@@ -940,11 +945,6 @@
       "required": true
     },
     {
-      "projectID": 299540,
-      "fileID": 4028348,
-      "required": true
-    },
-    {
       "projectID": 579484,
       "fileID": 4026609,
       "required": true
@@ -982,11 +982,6 @@
     {
       "projectID": 361276,
       "fileID": 4179721,
-      "required": true
-    },
-    {
-      "projectID": 288885,
-      "fileID": 4029996,
       "required": true
     },
     {
@@ -1100,13 +1095,13 @@
       "required": true
     },
     {
-      "projectID": 412525,
-      "fileID": 3955287,
+      "projectID": 225643,
+      "fileID": 4161114,
       "required": true
     },
     {
-      "projectID": 225643,
-      "fileID": 4161114,
+      "projectID": 412525,
+      "fileID": 3955287,
       "required": true
     },
     {
