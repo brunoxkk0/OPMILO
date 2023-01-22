@@ -23,4 +23,7 @@
 	#Set the max hp limit for Charm, mobs with more max hp will be immune.
 	#Range: > 0
 	charm_hp_limit = 150
+	#The tier of the glyph
+	#Range: 1 ~ 99
+	glyph_tier = 2
 
