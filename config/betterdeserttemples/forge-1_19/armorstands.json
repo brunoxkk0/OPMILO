@@ -1,8 +1,8 @@
 {
   "armoryHelmets": {
     "entries": {
-      "golden_helmet": 0.2,
-      "chainmail_helmet": 0.3
+      "chainmail_helmet": 0.3,
+      "golden_helmet": 0.2
     },
     "defaultItem": "air"
   },

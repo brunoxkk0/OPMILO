@@ -22,3 +22,6 @@ config/jei/*
 !/install
 !minecraftinstance.json
 !profileImage
+
+#Fix AMD crash
+!flywheel-client.toml
