@@ -1,6 +1,7 @@
-// priority: 1000
+//priority: 1000
 
 ServerEvents.recipes((event) => {
+
   //Vanila
   event.remove({ output: "minecraft:crafting_table" });
   event.remove({ output: "minecraft:furnace" });
@@ -30,24 +31,33 @@ ServerEvents.recipes((event) => {
   //Axe part
   event.remove({ output: "silentgear:axe_template" });
 
-  // Remove all plates
-  //event.remove({ input: "ad_astra:hammer" });
-  event.remove({ input: "#alltheores:ore_hammers", output: "#forge:plates" });
-
   // Remove easy steel recipe
   event.remove({
     input: "minecraft:iron_ingot",
     output: "#forge:ingots/steel",
   });
-
-  event.remove({
-    input: "#alltheores:ore_hammers",
-    output: "#forge:dusts/steel",
-  });
+  
+  // DEEP REMOVAL
+  // Remove all plates
+  //event.remove({ input: "ad_astra:hammer" });
+  Ingredient.of("#alltheores:ore_hammers").stacks.forEach(el => {
+	  Ingredient.of("#forge:plates").stacks.forEach(el2 => {
+		event.remove({ input: el, output: el2 });		  
+	  })
+	  
+	  Ingredient.of("#forge:dusts/steel").stacks.forEach(el2 => {
+		  event.remove({ input: el, output: el2,});  
+	  })
+  })
 
   // Remove all gears
-  event.remove({ output: "#forge:gears", type: "minecraft:crafting_shaped" });
-  event.remove({ output: "#forge:gears", type: "minecraft:crafting_shapeless" });
+  Ingredient.of("#forge:gears").stacks.forEach(el => {
+	  event.remove({ output: el, type: "minecraft:crafting_shaped" });
+	  event.remove({ output: el, type: "minecraft:crafting_shapeless" });
+	  event.remove({ output: el, type: "kubejs:shaped" });
+	  event.remove({ output: el, type: "kubejs:shapeless" });
+  })
+  // DEEP REMOVAL
 
   //Create Deco
   event.remove({ output: "createdeco:dean_brick" });
